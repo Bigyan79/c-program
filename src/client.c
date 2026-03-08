@@ -11,5 +11,8 @@ int main()
         printf("Failed to error");
         return 1;
     }
+
+    // Create a Socket
+    SOCKET _socket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
     return 0;
 }

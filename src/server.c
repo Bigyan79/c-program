@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <winsock2.h> 
+#include <winsock2.h>
 
 int main()
 {
@@ -11,5 +11,9 @@ int main()
         printf("Failed to startup WSA\n");
         return 1;
     }
+
+    // Create a Socket
+    SOCKET _socket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+
     return 0;
 }
